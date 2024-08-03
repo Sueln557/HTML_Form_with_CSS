@@ -9,27 +9,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Sue Ng">
   <title>Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #results {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
+  <h1> Results Page</h1>
   <div id="results"></div>
   <a href="index.html">Back to Form</a>
+
   <script>
     const resultsList = document.getElementById('results')
     const params = new URLSearchParams(window.location.search);
-    
-    // Iterate over each parameter
+
+    // Create and append table to results
+    const table = document.createElement('table');
+    const tableBody = document.createElement('tbody');
+
+    // Iterate over each parameter and add it to the table
     params.forEach((value, key) => {
-      const resultText = document.createTextNode(`${key}: ${value}`);
-      resultsList.appendChild(resultText);
-      resultsList.appendChild(document.createElement('br'));
+      const row = document.createElement('tr');
+      const cellKey = document.createElement('td');
+      cellKey.textContent = key + ':';
+      const cellValue = document.createElement('td');
+      cellValue.textContent = value;
+      row.appendChild(cellKey);
+      row.appendChild(cellValue);
+      tableBody.appendChild(row);
     });
 
-    // Eg. Just get the firstname variable
-    const firstName = params.get('firstname');
-    resultsList.appendChild(document.createTextNode(`First Name: ${firstName}`));
-    resultsList.appendChild(document.createElement('br')); // Add a line break
-    
+    table.appendChild(tableBody);
+    resultsList.appendChild(table);
+
   </script>
 </body>
 
