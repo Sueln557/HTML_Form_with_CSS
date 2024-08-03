@@ -5,130 +5,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Sue Ng">
-  <title>HTML_Form_with_CSS</title>
-  //<link href="magiceightball.css" rel="stylesheet" type="text/css">
-  //<script src="magiceightball.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sue Ng">
+    <title>HTML_Form_with_CSS</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <form action="results.html" method="GET">
-    <div>
-      <label>
-        First Name
-        <input type="email" name="fname" id="fname" placeholder="First Name" required>
-      </label>
-    </div>
-    <div>
-      <label>
-        Email
-        <input type="email" name="email" id="email" placeholder="Email" required>
-      </label>
-    </div>
-    <div>
-      <label>
-        Age
-        <input type="number" names="age" id="ge" min="18" max="130" step="2" placeholder="Enter Age" required>
-      </label>
-    </div>
-    <div>
-      <label>
-        Birthday
-        <input type="date" name="date" id="date" required min="2022-01-01">
-      </label>
-    </div>
-    <div>
-      <label for="Placeholder">Phone</label>
-      <input type="tel" home="phoneNumber" id="phoneNumber">
-    </div>
-    <div>
-      Favorite Season:
-    </div>
-    <div>
-      <label>
-        winter
-        <input type="checkbox" name="Winter" id="Winter">
-      </label>
-    </div>
-    <div>
-      <label>
-        Summer
-        <input type="checkbox" name="Summer" id="Summer">
-      </label>
-    </div>
-    <div>
-      <label>
-        User Name
-        <input type="text" name="username" id="username" placeholder="Username" required>
-      </label>
-    </div>
-    <div>
-      Do you prefer Nighttime or Daytime
-    </label>
-      Night
-      <input type="radio" name="preference" id="night" value="Night">
-    </label>
-      <label>
-        Day
-        <input type="radio" name="preference" id="day" value="Day">
-      </label>
-      </div>
-    <div>
-      <label for="faveDay">Favorite Weekday</label>
-      <select name="faveDay" id="faveDay" multiple>
-        <option value="Monday">Monday</option>
-        <option label="Tuesday" value="Tuesday"></option>
-        <option value="Wednesday">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="Friday" selected>Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-      </select>
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" id="passsword" placeholder="Password" required>
-      </label>
-    </div>
-    <div>
-      <textarea name="opinion" id="opinion">Tell us what you think</textarea>
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="webUrl" id="webUrl">
-    </div>
-    <div>
-      <label for="favecolor">Favorite Color</label>
-      <input type="color" name="favecolor" id="favecolor">
-    </div>
-    <input type="hidden" name="sessionId" id="sessionId"
-      value="secretRandomNumberUsedtoManageTheSession">
-    <div>
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
-    </div>
-  </form>
-  <div>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
-      <input type="file" name="fileUpload" id="fileUpload">
+    <form action="results.html" method="GET">
+        <label for="fname">First Name:  </label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+        <div>
+        <label for="email">Email:  </label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="age"> Age:  </label>
+            <input type="number" names="age" id="ge" min="18" max="130" step="2" placeholder="Enter Age" required>
+        </div>
+        <div>
+            <label>
+                Birthday:
+                <input type="date" name="date" id="date" required min="2022-01-01">
+            </label>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone: </label>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div>
+            Favorite Season:
+        </div>
+        <div>
+            <label>
+                Winter
+                <input type="checkbox" name="Winter" id="Winter">
+            </label>
+        </div>
+        <div>
+            <label>
+                Summer
+                <input type="checkbox" name="Summer" id="Summer">
+            </label>
+        </div>
+        <div>
+            <label>
+                User Name:  
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </label>
+        </div>
+        <div>
+            Do you prefer Nighttime or Daytime: <br>
+            </label>
+            Night
+            <input type="radio" name="preference" id="night" value="Night">
+            </label>
+            <label>
+                Day
+                <input type="radio" name="preference" id="day" value="Day">
+            </label>
+        </div>
+        <div>
+            <label for="faveDay">Favorite Weekday: <br></label>
+            <select name="faveDay" id="faveDay" multiple>
+                <option value="Monday">Monday</option>
+                <option label="Tuesday" value="Tuesday"></option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday" selected>Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                Password: 
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </label>
+        </div>
+        <div>
+            <textarea name="opinion" id="opinion">Tell us what you think</textarea>
+        </div>
+        <div>
+            <label for="url">URL: </label>
+            <input type="url" name="webUrl" id="webUrl">
+        </div>
+        <div>
+            <label for="favecolor">Favorite Color:  </label>
+            <input type="color" name="favecolor" id="favecolor">
+        </div>
+        <input type="hidden" name="sessionId" id="sessionId" value="secretRandomNumberUsedtoManageTheSession">
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
     </form>
-  </div>
-</body>
-</html>
-        
-      </label>
-      </label>
-    <h2>Magic Eight Ball Game</h2>
-  </div>
-  <script>
-    //html page
-    let output = "Your question: " + question + "<br>" + "Magic Eight Ball Response:  " + response;
-    document.getElementById('magiceightball').innnerHTML = output;
-    document.writeln(output);            
-  </script>
+    <div>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <input type="file" name="fileUpload" id="fileUpload">
+        </form>
+    </div>
 </body>
 
 </html>
