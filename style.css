@@ -46,6 +46,7 @@ select {
   margin: 8px 0;
   display: inline-block;
   border: 2px solid red;
+  background-color: #efef0b;
   border-radius: 4px;
 }
 
@@ -69,7 +70,7 @@ input[type=date] {
   border: 2px solid black;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
+  background-color: blanchedalmond;
   padding: 12px 20px 12px 40px;
 }
 
@@ -125,6 +126,7 @@ input[type=url] {
   margin: 8px 0;
   display: inline-block;
   border: 2px solid brown;
+  background-color: pink;
   border-radius: 4px;
   box-sizing: border-box;
 }
