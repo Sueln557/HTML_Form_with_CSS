@@ -1,0 +1,161 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+}
+
+div {
+  display: left;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+/*text*/
+input[type=text],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+/*email*/
+input[type=email],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+/*number field*/
+input[type=number] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: orange;
+}
+
+/*date*/
+input[type=date] {
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+}
+
+/*telephone*/
+input[type=tel] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid cyan;
+  border-radius: 4px;
+}
+
+/*checkbox & radio buttons*/
+input:checked {
+  height: 20px;
+  width: 20px;
+}
+
+/*option - Favorite Weekday*/
+option:checked {
+  height: 15px;
+  width: 100%;
+}
+
+/*password*/
+input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: cyan;
+  color: #2c0202;
+}
+
+/*Url*/
+input[type=url] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid brown;
+  border-radius: 4px;
+}
+
+/* Style for Favorite Color label */
+label {
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style for the color input */
+input[type="color"] {
+  width: 10%;
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/*button*/
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*Reset button*/
+button[type="reset"] {
+  background-color: #f44336;
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: #c62828;
+}
+
+/*submit button*/
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+/*file chosen*/
+input[type="file"]::file-selector-button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
