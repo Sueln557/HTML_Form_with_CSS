@@ -4,6 +4,19 @@ html {
   background-color: peachpuff;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%
+}
+
 div {
   display: left;
   justify-content: center;
@@ -14,7 +27,7 @@ div {
 /*text*/
 input[type=text],
 select {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -28,7 +41,7 @@ select {
 /*email*/
 input[type=email],
 select {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -38,7 +51,7 @@ select {
 
 /*number field*/
 input[type=number] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -51,7 +64,7 @@ input[type=number] {
 
 /*date*/
 input[type=date] {
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   border: 2px solid black;
   border-radius: 4px;
@@ -62,12 +75,13 @@ input[type=date] {
 
 /*telephone*/
 input[type=tel] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 2px solid cyan;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 /*checkbox & radio buttons*/
@@ -84,7 +98,7 @@ option:checked {
 
 /*password*/
 input[type=password] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -95,14 +109,24 @@ input[type=password] {
   color: #2c0202;
 }
 
+/*opinion*/
+textarea {
+    width: 100%;width;
+    background-color: khaki;
+    padding: 10px; 
+    border: 1px solid plum; 
+    resize: vertical; 
+}
+
 /*Url*/
 input[type=url] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 2px solid brown;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /* Style for Favorite Color label */
@@ -115,10 +139,10 @@ label {
 
 /* Style for the color input */
 input[type="color"] {
-  width: 10%;
+  width: 100%;
   height: 30px;
   border: none;
-  padding: 0;
+  padding: 0px;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -148,14 +172,16 @@ button[type="reset"]:hover {
 button[type="submit"] {
   background-color: #4caf50;
   color: white;
+  margin-top: 5px;
 }
 
 /*file chosen*/
-input[type="file"]::file-selector-button {
+input[type="file"] {
   background-color: teal;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
