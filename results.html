@@ -14,12 +14,13 @@
 <body>
   <div id="results"></div>
   <a href="index.html">Back to Form</a>a>
-<script>
- const resultsList = document.getElementById('results')
-   new URLSearchParams(window.location.search).forEach((name, password) => {
-     resultsList.append('${name}: ${password}')
-       resultsList.append(document.createElement('br'))
-   })
+  <script>
+    const resultsList = document.getElementById('results')
+    new URLSearchParams(window.location.search).forEach((firstName, lastName) => {
+      resultsList.append('${firstName} is the ${password}')
+      resultsList.append(document.createElement('br'))
+    })
   </script>
 </body>
+
 </html>
