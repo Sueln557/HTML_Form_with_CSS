@@ -13,13 +13,23 @@
 
 <body>
   <div id="results"></div>
-  <a href="index.html">Back to Form</a>a>
+  <a href="index.html">Back to Form</a>
   <script>
     const resultsList = document.getElementById('results')
-    new URLSearchParams(window.location.search).forEach((firstName, lastName) => {
-      resultsList.append('${firstName} is the ${password}')
-      resultsList.append(document.createElement('br'))
-    })
+    const params = new URLSearchParams(window.location.search);
+    
+    // Iterate over each parameter
+    params.forEach((value, key) => {
+      const resultText = document.createTextNode(`${key}: ${value}`);
+      resultsList.appendChild(resultText);
+      resultsList.appendChild(document.createElement('br'));
+    });
+
+    // Eg. Just get the firstname variable
+    const firstName = params.get('firstname');
+    resultsList.appendChild(document.createTextNode(`First Name: ${firstName}`));
+    resultsList.appendChild(document.createElement('br')); // Add a line break
+    
   </script>
 </body>
 
