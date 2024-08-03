@@ -11,100 +11,172 @@
     <title>HTML_Form_with_CSS</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
+<h1>Form</h1>
 <body>
     <form action="results.html" method="GET">
-        <label for="fname">First Name:  </label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name..."><br>
-        <label for="lname">Last Name:  </label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-        <div>
-        <label for="email">Email:  </label>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        </div>
-        <div>
-            <label for="age"> Age:  </label>
-            <input type="number" name="age" id="ge" min="18" max="130" step="2" placeholder="Enter Age" required>
-        </div>
-        <div>
-            <label>
-                Birthday:
-                <input type="date" name="date" id="date" required min="2022-01-01">
-            </label>
-        </div>
-        <div>
-            <label for="phoneNumber">Phone: </label>
-            <input type="tel" name="phoneNumber" id="phoneNumber">
-        </div>
-        <div>
-            Favorite Season:
-        </div>
-        <div>
-            <label>
-                Winter
-                <input type="checkbox" name="Winter" id="Winter">
-            </label>
-        </div>
-        <div>
-            <label>
-                Summer
-                <input type="checkbox" name="Summer" id="Summer">
-            </label>
-        </div>
-        <div>
-            <label>
-                User Name:  
-                <input type="text" name="username" id="username" placeholder="Username" required>
-            </label>
-        </div>
-        <div>
-            Do you prefer Nighttime or Daytime: <br>
-            </label>
-            Night
-            <input type="radio" name="preference" id="night" value="Night">
-            </label>
-            <label>
-                Day
-                <input type="radio" name="preference" id="day" value="Day">
-            </label>
-        </div>
-        <div>
-            <label for="faveDay">Favorite Weekday: <br></label>
-            <select name="faveDay" id="faveDay" multiple>
-                <option value="Monday">Monday</option>
-                <option label="Tuesday" value="Tuesday"></option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday" selected>Friday</option>
-                <option value="Saturday">Saturday</option>
-                <option value="Sunday">Sunday</option>
-            </select>
-        </div>
-        <div>
-            <label>
-                Password: 
-                <input type="password" name="password" id="password" placeholder="Password" required>
-            </label>
-        </div>
-        <div>
-            <textarea name="opinion" id="opinion">Tell us what you think</textarea>
-        </div>
-        <div>
-            <label for="url">URL: </label>
-            <input type="url" name="webUrl" id="webUrl">
-        </div>
-        <div>
-            <label for="favecolor">Favorite Color:  </label>
-            <input type="color" name="favecolor" id="favecolor">
-        </div>
-        <input type="hidden" name="sessionId" id="sessionId" value="secretRandomNumberUsedtoManageTheSession">
-        <div>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
-        </div>
-        <div>
-            <input type="file" name="fileUpload" id="fileUpload">
-        </div>
+        <table>
+            <tr>
+
+                <td><label for="fname">First Name: </label></td>
+                <td><input type="text" id="fname" name="firstname" placeholder="Your first name..."></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name: </label></td>
+                <td><input type="text" id="lname" name="lastname" placeholder="Your last name..."></td>
+            </tr>
+            <tr>
+
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" id="email" name="email" placeholder="Email" required></td>
+
+
+            </tr>
+            <tr>
+
+                <td><label for="age"> Age: </label></td>
+                <td><input type="number" name="age" id="ge" min="18" max="130" step="2" placeholder="Enter Age"
+                        required>
+                </td>
+
+            </tr>
+            <tr>
+
+                <td><label>
+                        Birthday: </label></td>
+                <td><input type="date" name="date" id="date" required min="2022-01-01">
+                </td>
+
+
+
+            </tr>
+            <tr>
+
+                <td><label for="phoneNumber">Phone: </label></td>
+                <td><input type="tel" name="phoneNumber" id="phoneNumber"></td>
+
+
+            </tr>
+            <tr>
+
+                <td><label>
+                        Favorite Season:
+                    </label></td>
+
+                <td>
+
+                    <label>
+                        Winter
+                        <input type="checkbox" name="Winter" id="Winter">
+                    </label>
+
+                    <label>
+                        Summer
+                        <input type="checkbox" name="Summer" id="Summer">
+                    </label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <label>
+                        User Name: </label>
+
+                </td>
+                <td>
+
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Do you prefer Nighttime or Daytime: <br>
+                </td>
+                <td></label><label>
+                        Night
+                        <input type="radio" name="preference" id="night" value="Night">
+                    </label>
+                    <label>
+                        Day
+                        <input type="radio" name="preference" id="day" value="Day">
+                    </label>
+                </td>
+            </tr>
+
+            </td>
+            </tr>
+            <tr>
+
+
+                <td><label for="faveDay">Favorite Weekday: <br></label></td>
+                <td><select name="faveDay" id="faveDay" multiple>
+                        <option value="Monday">Monday</option>
+                        <option label="Tuesday" value="Tuesday"></option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday" selected>Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select></td>
+
+            </tr>
+            <tr>
+                <td><label>Password:</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+
+                    <textarea name="opinion" id="opinion">Tell us what you think</textarea>
+
+                </td>
+            </tr>
+            <tr>
+
+
+                <td><label for="url">URL: </label></td>
+                <td><input type="url" name="webUrl" id="webUrl"></td>
+
+            <tr>
+                <td>
+                    <label for="favecolor">Favorite Color: </label>
+                </td>
+                <td><input type="color" name="favecolor" id="favecolor">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="hidden" name="sessionId" id="sessionId"
+                        value="secretRandomNumberUsedtoManageTheSession">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <form action="results.html" method="GET" enctype="multipart/form-data">
+                        <input type="file" name="fileUpload" id="fileUpload">
+                    </form>
+                </td>
+            </tr>
+
+        </table>
     </form>
 </body>
 
